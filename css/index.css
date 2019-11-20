@@ -8,13 +8,35 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 70%;
-  margin: 20% 15% 0;
+  margin: 5% 15% 0;
+}
+.image-alignment {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+@media (min-width: 550px) {
+  .image-alignment {
+    margin-left: 15%;
+    justify-content: space-between;
+  }
 }
 .footer-alignment {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   height: 50px;
   width: 70%;
+  margin: 8% 15% 0;
+}
+@media (min-width: 550px) {
+  .footer-alignment {
+    margin-bottom: 7%;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -153,7 +175,7 @@ html {
 html,
 body {
   font-family: 'Righteous', sans-serif;
-  color: #508991;
+  color: #deeef4;
 }
 h1,
 h2 {
@@ -167,80 +189,254 @@ h2 {
   font-size: 3.2rem;
 }
 h3 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
+}
+@media (min-width: 550px) {
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+p {
+  font-size: 1.2rem;
+}
+@media (min-width: 500px) {
+  p {
+    font-size: 1.8rem;
+  }
 }
 .container {
-  max-width: 800px;
+  min-width: 500px;
   width: 100%;
   margin: 0 auto;
 }
-body {
-  background: url(img\elena-de-soto-w423NnHFjFg-unsplash.jpg);
-  background-color: #deeef4;
+body .container .top-content {
+  position: relative;
 }
-.home .intro {
+body .container .top-content .header-image {
   height: 200px;
 }
-.home .intro a {
-  text-decoration: none;
+@media (min-width: 550px) {
+  body .container .top-content {
+    height: 400px;
+    width: 70%;
+    margin: 0 15% 0;
+  }
+  body .container .top-content .header-image {
+    height: 100%;
+  }
 }
-.home .intro .contact-us {
+body .container .top-content .contact-us {
+  position: absolute;
+  top: 75px;
+  right: 5px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding: 2px;
-  width: 100%;
-  height: 40px;
+  width: 20%;
+  height: 45px;
+  font-size: 1.8rem;
+  border: 3px solid #508991;
+  border-radius: 18%;
+  background: #004346;
 }
-.home .intro .title {
+@media (min-width: 550px) {
+  body .container .top-content .contact-us {
+    width: 25%;
+    height: 50px;
+    text-align: center;
+  }
+}
+@media (min-width: 700px) {
+  body .container .top-content .contact-us {
+    padding: 25px;
+  }
+}
+body .container .top-content .title-text {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  padding: 15px;
+  height: 100px;
+  font-size: 4.8rem;
+  text-decoration: none;
+}
+@media (min-width: 550px) {
+  body .container .top-content .title-text {
+    left: 20%;
+  }
+}
+body .container .title-text {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 15px;
   height: 100px;
+  text-decoration: none;
 }
-.home .about-us {
+body .container .about-us {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   width: 70%;
-  margin: 20% 15% 0;
+  margin: 5% 15% 0;
   background-color: lightblue;
 }
-.home .about-us h2 {
+body .container .about-us h2 {
   display: flex;
   justify-content: center;
   padding: 2%;
 }
-.home .about-us p {
+body .container .about-us p {
   padding: 2%;
   text-align: center;
 }
-.home .about-us .images {
-  display: flex;
+body .container .images {
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 80%;
-  padding: 3%;
+  margin-left: 10%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
   background-color: white;
 }
-.home .about-us .images .middle-images {
+@media (min-width: 550px) {
+  body .container .images {
+    margin-left: 15%;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 500px) {
+  body .container .images {
+    width: 70%;
+    height: 350px;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 700px) {
+  body .container .images {
+    height: 300px;
+  }
+}
+body .container .images .middle-images {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 100px;
   max-height: 300px;
-}
-.home footer {
-  max-width: 600px;
   text-align: center;
-  background-color: black;
+  background-color: lightblue;
 }
-.home footer nav {
+@media (min-width: 550px) {
+  body .container .images .middle-images {
+    align-items: center;
+    max-width: 30%;
+    max-height: 100%;
+    padding-bottom: 5%;
+  }
+}
+body .container .images .middle-images .image1 {
+  width: 100px;
+  height: 75px;
+}
+@media (min-width: 550px) {
+  body .container .images .middle-images .image1 {
+    width: 100%;
+    height: 35%;
+  }
+}
+body .container .images .middle-images .image2 {
+  width: 100px;
+}
+@media (min-width: 550px) {
+  body .container .images .middle-images .image2 {
+    width: 100%;
+    height: 35%;
+  }
+}
+body .container .images h3 {
+  margin: 5% 0;
+}
+body .container .bottom-content {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 15% 10% 0;
+  width: 80%;
+  text-align: center;
+  background-color: lightblue;
+}
+@media (min-width: 550px) {
+  body .container .bottom-content {
+    margin: 5% 15% 0;
+    width: 70%;
+    padding-bottom: 2%;
+  }
+}
+body .container .bottom-content h2 {
+  padding: 5%;
+}
+body .container footer {
+  max-width: 600px;
+  margin-top: 5%;
+}
+@media (min-width: 550px) {
+  body .container footer {
+    margin: 5% 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 700px) {
+  body .container footer {
+    margin: 5% 15% 3%;
+  }
+}
+body .container footer nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: 50px;
   width: 70%;
+  margin: 8% 15% 0;
   font-size: 1.5rem;
+  text-align: center;
+}
+@media (min-width: 550px) {
+  body .container footer nav {
+    margin-bottom: 7%;
+  }
+}
+body .container footer nav a {
   text-decoration: none;
+  color: #004346;
+  padding: 5px;
+}
+body .navigation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+}
+body .navigation .about {
+  display: flex;
+  justify-content: flex-end;
+  height: 30px;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+body .navigation .about a {
+  padding: 5px;
+}
+body .navigation .main-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-top: 5%;
+  border: 1px solid darkgray;
+}
+body .navigation .main-content p {
+  margin-bottom: 20%;
 }
