@@ -4,68 +4,50 @@ body {
 
     .container {
 
-        .top-content {
-            position: relative;
+        .head {
+
+        .intro {
+            display: flex;
+            align-items: center;
+
+            .name-logo {
+                width: 400px;
+            }
+        }
+
+        .intro-content{
 
             .header-image {
-                height: 200px;
-            }
-
-            @media (min-width: 550px) {
-                height: 400px;
-                width: 70%;
-                margin: 0 15% 0;
-
-                .header-image {
-                    height: 100%;
-                }
-                
+                height: 100%;
             }
 
             .contact-us {
-                position: absolute;
-                top: 75px;
-                right: 5px;
                 .intro-alignment;
-                width: 20%;
+                position: absolute;
+                top: 20%;
+                right: 5%;
+                width: 12%;
                 height: 45px;
                 font-size: 1.8rem;
                 border: 3px solid @border-color;
                 border-radius: 18%;
                 background: @background-color;
-
-                @media (min-width: 550px) {
-                    width: 25%;
-                    height: 50px;
-                    text-align: center;
-                }
-
-                @media (min-width: 700px) {
-                    padding: 25px;
-                }
             }
 
+        
+
             .title-text {
+                .intro-alignment;
                 position: absolute;
-                top: 50%;
-                left: 20%;
-                padding: 15px;
+                top: 30%;
+                left: 30%;
                 height: 100px;
                 font-size: 4.8rem;
                 text-decoration: none;
-
-                @media (min-width: 550px) {
-                    left: 20%;
-                }
             }
         }
 
-        .title-text {
-            .intro-alignment;
-            justify-content: center;
-            padding: 15px;
-            height: 100px;
-            text-decoration: none;
+            
         }
 
         .about-us {
@@ -86,54 +68,24 @@ body {
 
         .images {
             .image-alignment;
-            display: flex;
-            justify-content: space-between;
+            margin-top: 5%;
             background-color: white;
-
-            @media (min-width: 500px) {
-                width: 70%;
-                height: 350px;
-                justify-content: space-evenly;
-            }
-
-            @media (min-width: 700px) {
-                height: 300px;
-            }
             
 
             .middle-images {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
-                max-width: 100px;
-                max-height: 300px;
+                width: 200px;
                 text-align: center;
                 background-color: lightblue;
 
-                @media (min-width:550px) {
-                    align-items: center;
-                    max-width: 30%;
-                    max-height: 100%;
-                    padding-bottom: 5%;
-                }
-
                 .image1 {
-                    width: 100px;
-                    height: 75px;
-
-                    @media (min-width: 550px) {
-                        width: 100%;
-                        height: 35%;
-                    }
+                    width: 100%;
+                    height: 50%;
                 }
 
                 .image2 {
-                    width: 100px;
-
-                    @media (min-width: 550px) {
-                        width: 100%;
-                        height: 35%;
-                    }
+                    width: 100%;
                 }
             }
 
@@ -147,16 +99,12 @@ body {
         .bottom-content {
             .intro-alignment;
             flex-direction: column;
-            margin: 15% 10% 0;
+            margin-left: 11%;
+            margin-top: 5%;
             width: 80%;
             text-align: center;
             background-color: lightblue;
 
-            @media (min-width: 550px) {
-                margin: 5% 15% 0;
-                width: 70%;
-                padding-bottom: 2%;
-            }
 
             h2 {
                 padding: 5%;
@@ -165,19 +113,9 @@ body {
         }
 
         footer {
-            max-width: 600px;
             margin-top: 5%;
-
-            @media (min-width:550px) {
-                margin: 5% 0;
-                display: flex;
-                justify-content: center;
-                
-            }
-
-            @media (min-width: 700px) {
-                margin: 5% 15% 3%;
-            }
+            display: flex;
+            justify-content: center;            
 
             nav {
             .footer-alignment;
@@ -194,4 +132,3 @@ body {
 
     }
 }
-   
