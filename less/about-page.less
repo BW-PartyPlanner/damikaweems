@@ -2,9 +2,17 @@ body {
 
     .navigation {
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        border: 1px solid black;
+        justify-content: space-between;
+        // flex-direction: column;
+
+        .name-logo {
+            width: 400px;
+        }
+
+        a {
+            text-decoration: none;
+            color: @background-color;
+        }
 
         .about {
             display: flex;
@@ -17,17 +25,85 @@ body {
                 padding: 5px;
             }
         }
+    }
 
-        .main-content {
+    .main-content {
+        padding-top: 5%;
+        border: 1px solid darkblue;
+
+        img {
+            margin: 3%;
+            width: 250px;
+        }
+
+        p {
+            margin-bottom: 5%;
+        }
+
+        .topmember {
             display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
-            padding-top: 5%;
-            border: 1px solid darkgray;
 
-            p {
-                margin-bottom: 20%;
+            .members-pl {
+                width: 50%;
+                justify-content: center;
+
+                p {
+                    margin-top: 2%;
+                }
+
+            }
+        }
+
+        .secondmembers {
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            .members-wrII {
+                width: 47%;
+                height: 500px;
+                justify-content: center;
+
+                p {
+                    margin-top: 2%;
+                }
+            }
+        }
+
+        .thirdmembers {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            border: 2px solid black;
+
+            .members-wrI {
+                width: 47%;
+                height: 500px;
+                justify-content: center;
+
+                p {
+                    margin-top: 2%;
+                }
+            }
+        }
+
+        .bottommembers {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            border: 2px solid black;
+
+            .members-web {
+                width: 47%;
+                height: 500px;
+                justify-content: center;
+
+                p {
+                    margin-top: 2%;
+                }
             }
         }
     }

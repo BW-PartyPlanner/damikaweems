@@ -304,9 +304,14 @@ body .container footer nav a {
 }
 body .navigation {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  border: 1px solid black;
+  justify-content: space-between;
+}
+body .navigation .name-logo {
+  width: 400px;
+}
+body .navigation a {
+  text-decoration: none;
+  color: #004346;
 }
 body .navigation .about {
   display: flex;
@@ -318,14 +323,68 @@ body .navigation .about {
 body .navigation .about a {
   padding: 5px;
 }
-body .navigation .main-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  text-align: center;
+body .main-content {
   padding-top: 5%;
-  border: 1px solid darkgray;
+  border: 1px solid darkblue;
 }
-body .navigation .main-content p {
-  margin-bottom: 20%;
+body .main-content img {
+  margin: 3%;
+  width: 250px;
+}
+body .main-content p {
+  margin-bottom: 5%;
+}
+body .main-content .topmember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body .main-content .topmember .members-pl {
+  width: 50%;
+  justify-content: center;
+}
+body .main-content .topmember .members-pl p {
+  margin-top: 2%;
+}
+body .main-content .secondmembers {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+body .main-content .secondmembers .members-wrII {
+  width: 47%;
+  height: 500px;
+  justify-content: center;
+}
+body .main-content .secondmembers .members-wrII p {
+  margin-top: 2%;
+}
+body .main-content .thirdmembers {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 2px solid black;
+}
+body .main-content .thirdmembers .members-wrI {
+  width: 47%;
+  height: 500px;
+  justify-content: center;
+}
+body .main-content .thirdmembers .members-wrI p {
+  margin-top: 2%;
+}
+body .main-content .bottommembers {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 2px solid black;
+}
+body .main-content .bottommembers .members-web {
+  width: 47%;
+  height: 500px;
+  justify-content: center;
+}
+body .main-content .bottommembers .members-web p {
+  margin-top: 2%;
 }
