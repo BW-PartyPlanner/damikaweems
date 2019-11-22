@@ -203,6 +203,10 @@ body .container .head .intro .name-logo {
 body .container .head .intro-content .header-image {
   height: 100%;
 }
+body .container .head .intro-content a {
+  text-decoration: none;
+  color: #07b5b5;
+}
 body .container .head .intro-content .contact-us {
   display: flex;
   align-items: center;
@@ -212,7 +216,7 @@ body .container .head .intro-content .contact-us {
   right: 5%;
   width: 12%;
   height: 45px;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   border: 3px solid #508991;
   border-radius: 18%;
   background: #004346;
@@ -280,6 +284,10 @@ body .container .bottom-content {
   text-align: center;
   background-color: lightblue;
 }
+body .container .bottom-content a {
+  text-decoration: none;
+  width: 500px;
+}
 body .container .bottom-content h2 {
   padding: 5%;
 }
@@ -326,6 +334,11 @@ body .navigation .about a {
 body .main-content {
   padding-top: 5%;
   border: 1px solid darkblue;
+  display: flex;
+  flex-direction: column;
+}
+body .main-content h1 {
+  border: 2px solid black;
 }
 body .main-content img {
   margin: 3%;
@@ -336,8 +349,8 @@ body .main-content p {
 }
 body .main-content .topmember {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 body .main-content .topmember .members-pl {
@@ -351,6 +364,11 @@ body .main-content .secondmembers {
   display: flex;
   align-items: center;
   text-align: center;
+  height: 800px;
+  border: 2px solid darkblue;
+}
+body .main-content .secondmembers h1 {
+  width: 100%;
 }
 body .main-content .secondmembers .members-wrII {
   width: 47%;
@@ -364,7 +382,6 @@ body .main-content .thirdmembers {
   display: flex;
   align-items: center;
   text-align: center;
-  border: 2px solid black;
 }
 body .main-content .thirdmembers .members-wrI {
   width: 47%;
@@ -378,7 +395,6 @@ body .main-content .bottommembers {
   display: flex;
   align-items: center;
   text-align: center;
-  border: 2px solid black;
 }
 body .main-content .bottommembers .members-web {
   width: 47%;
